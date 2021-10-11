@@ -1,5 +1,4 @@
-# hello
-
-#Hi  Dev's!
-
-Sou iniciante em programação, quero imenso apreender, se possível trabalhar, com dev's experientes!
+-Hi, I’m @joaomesq
+-Estou interessado em IA e programaço web...
+-Actualmente estou apreendendo Python e C#...
+-Estou procurando coloborar em desenvolvimento web...
