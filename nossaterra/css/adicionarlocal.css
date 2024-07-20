@@ -1,0 +1,83 @@
+
+.main{
+	width: 100%;
+	margin-top: 100px;
+	text-align: center;
+
+   
+}
+.main h2{ font-size: 2.0em; }
+
+.card_adicionar_local{ padding: 10px; box-shadow: 0 0 20px #000; background: rgba(255, 255, 255, 0.7); width: 90%; margin: auto; border-radius: 8px;  margin-bottom: 30px;}
+form{ width: 100%; margin: auto;  padding: 10px; font-size: 1.2em;}
+table{ margin: auto; width: 100%; padding: 1px; }
+table tr td{
+	width: 100%;
+	display: block;
+
+	margin: 5px;
+}
+fieldset{ 
+	border-radius: 8px;
+}
+
+input,
+select,
+textarea,
+input[type="file"],
+.card_adicionar_local button{
+	width: 100%;
+	padding: 10px;
+
+	border: none;
+	font-size: 1.0em;
+	box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+
+	background: transparent;
+	color: #000;
+}
+textarea{
+	height: 150px;
+}
+#textarea_localizacao{
+	height: 80px;
+}
+th,
+strong{
+	display: none;
+}
+
+.card_adicionar_local button{
+	margin-top: 10px;
+	border-radius: 4px;
+	border: none;
+
+    text-transform: uppercase;
+
+    display: inline-block;
+    box-shadow: 0 0 0 #fff; 
+}
+#adicionar{
+	background: #4fd190;
+	color: #fff;
+}
+#limpar{
+	margin-top: 4px;
+	background: #f3533a;
+	color: #fff;
+
+}
+
+/* SMALL DEVICES - TABLETS*/
+@media screen and (min-width: 768px) {
+	.card_adicionar_local{ width: 60%; }
+	textarea{ height: 200px; }
+	button{ padding: 15px; width: 48%;  display: inline-block;}
+	
+}
+
+/* MEDIUM DEVICES - TABLETS & DESKTOPS*/
+@media screen and (min-width: 960px) {}
+
+/* LARGE DEVICES - WIDE SCREENS*/
+@media screen and (min-width: 1280px) {}

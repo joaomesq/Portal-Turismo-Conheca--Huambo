@@ -1,0 +1,255 @@
+*{ 
+	box-sizing: border-box;
+}
+
+body{
+
+	background: transparent url(../img/2.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+
+	 margin: auto;
+	 padding: auto; 
+	 width: 100%; 
+	 height: 100%; 
+	 font-family: Roboto-Light;
+}
+img{ width: 156px; height: 156px; }
+a{ text-decoration: none; color: #000; }
+li{ list-style: none; }
+.sidenote li{ list-style: unset; }
+
+.clear{ clear: both; }
+button{ cursor: pointer; }
+::focus{ border: none; border-color: transparent; }
+::placeholder{ color: #000; }
+
+
+
+/*===  SETANDO ===*/
+
+/* modal */
+.cabecalho{
+	position: fixed;
+	width: 100%;
+
+	top: 0;
+	padding: 10px;
+
+	background-image: linear-gradient( 300deg, red, black 70%);
+
+}
+.cabecalho h1{
+	margin-bottom: auto;
+	margin-top: auto;
+	text-align: center;
+	padding: 5px;
+
+	font-size: 320%;
+}
+.cabecalho h1 a{ color: #f00; }
+
+.btn_Open {
+	
+	width: 36px;
+	height: 36px;
+	float: right;
+	border: none;
+	border-radius: 4px;
+
+	margin-top: 15px;
+    background: transparent;
+}
+.btn_Open img{
+	width: inherit;
+	height: inherit;
+}
+
+.modal {
+
+	width: 50%;
+	height: 100%;
+	background: linear-gradient( 60deg, #bb1000, rgba(0, 0, 0, 0.9) 40%);
+	padding: 5px;
+	top: 0;
+	position: fixed;
+	font-size: 1.4em;
+
+	left: 50%;
+	display:none;
+	color: white;
+}
+.menu ul{
+padding: 5px;
+}
+.menu ul li{
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #fff;
+	padding: 10px;
+    
+    cursor: pointer;
+    margin-top: 20px;
+}
+.menu ul li a{ color: #fff; }
+
+.btn_Close{
+	font-size: 1.6em !important;
+	margin-top: 0!important;
+	margin-right: 5px;
+	width: 26px;
+	height: 26px;
+	border: none;
+    
+    float: right;
+
+    color: #fff;
+    background: inherit;
+}
+/*==== MODAL ====*/
+
+
+
+/*=== PESQUISA ===*/
+.div_pesquisar{ position: fixed; height: 100%; width: 100%; background: linear-gradient( 50deg, #bb1000, rgba(0, 0, 0, 0.9) 40%);  display: none; top: 0; left: 0; right: 0;}
+
+.btn_Close_pesquisa{
+margin-left: 93%;
+margin-top: 10px;
+font-size: 1.6em;
+border: none;
+color: #fff;
+background: transparent;
+
+} 
+.pesquisar input{
+	background: inherit;
+	color: #fff;
+	margin-top: 40px;
+	width: 80%;
+	padding: 5px;
+	border: none;
+	text-align: center;
+
+	font-size: 1.4em;
+	border-bottom: solid 1px #ccc;
+}
+.pesquisar button{ 
+	width: 19%;
+	padding: 5px;
+	margin-left: -3px;
+	font-size: 1.4em;
+	border: solid 1px #ccc;
+	border-radius: 4px;
+
+	background: inherit;
+	color: #fff;
+	box-shadow: 0 0 10px #fff;
+
+    
+}
+/*================*/
+
+.rodape{
+	font-size: 12px;
+	padding: 1px;
+	text-align: center;
+
+    margin-bottom: 0;
+	color: #fff;
+	background-image: linear-gradient( 300deg, red, black 70%);
+}
+
+.rodape article{
+	font-size: 14px;
+	background: #fff;
+	color: #000;
+	display: grid;
+	grid-template-columns: 2fr;
+	
+}
+.rodape section{ padding: 10px; text-align: left;}
+.rodape .ajuda li{ list-style: unset; }
+.rodape .ajuda a{ color: blue; text-decoration: underline;}
+.contato{ border: rgba(0, 0, 0, 0.8) solid; border-width:  5px 0 5px 0; }
+.contato ul li{ text-align: center; }
+
+.btn_sair{
+	position: fixed;
+	top: 90%;
+	left: 90%;
+	cursor: pointer;
+
+	color: white;
+	background: #f00;
+	padding: 4px;
+	border-radius: 4px;
+	display: none;
+}
+
+/* SMALL DEVICES - TABLETS*/
+@media screen and (min-width: 768px) {
+	.cabecalho h1{ text-align: unset; }
+	/* Desfazendo o modal*/
+	.btn_Open, .btn_Close {display: none;}
+	.modal{  left: 0; color: #fff; text-transform: uppercase; margin-left: 250px; background: transparent; display: block; width: auto; height: auto; margin-top: auto;}
+	.modal a{ color: #fff; }
+	
+    
+	.menu ul{ padding: 0 0 5px 10px; margin: auto; border-left-style: solid; border-left-color: #fff; border-left-width: 2px;}
+	.menu ul li{ display: inline-block; border-bottom-color: #fff;}
+    .menu ul li a:hover{ color: yellow; }
+	.menu  ul li:hover{ border-bottom-color: yellow; }
+     
+	a:hover{ color: yellow;  padding: 5px; }	
+
+	.rodape article{
+		font-size: 14px;
+		background: #fff;
+		color: #000;
+
+		grid-template-columns: 1fr 1fr 1fr;	
+	}
+	.rodape section{ padding: 10px; }
+	.contato{ border: rgba(0, 0, 0, 0.8) solid; border-width: 0 5px 0 5px; }
+	
+}
+@media screen and (min-width: 900px){
+	.menu ul .btn_abrir_pesquisar { display: none; }
+    .div_pesquisar{ background: transparent; width: auto; height: auto; position: static; display: unset; }
+	.div_pesquisar button{ display: none; }
+	.pesquisar{  display: unset; float: right; width: 100px; padding: 10px; margin-top: -60px; margin-right: 4px; border: solid 0 #fff; border-bottom-width: 2px;}
+	.pesquisar:hover{ border-color: yellow; width: unset; transition: 3s; }
+	.pesquisar input{ text-align: left; color: #fff; background: inherit; font-size: 1.4em; border: none; width: 100%; margin: auto; }
+	.pesquisar button{ display: none; }
+}
+
+@media screen and (min-width: 998px) {
+	.cabecalho{padding-top: 10px; padding-bottom: 10px;}
+	.cabecalho h1{ text-align: unset; }
+	/* Desfazendo o modal*/
+	.btn_Open, .btn_Close {display: none;}
+	.modal{  left: 0; color: #fff; text-transform: uppercase; margin-left: 250px; background: transparent; display: block; width: auto; height: auto; margin-top: auto;}
+	.modal a{ color: #fff; }
+	
+    
+	.menu ul{ padding: 15px; margin: auto; border-left-style: solid; border-left-color: #fff; border-left-width: 2px; }
+	.menu ul li{ margin-top: auto; display: inline-block; border-bottom-color: #fff;}
+    .menu ul li a:hover{ color: yellow; }
+	.menu  ul li:hover{ border-bottom-color: yellow; }
+     
+	a:hover{ color: yellow;  padding: 5px; }	
+
+	.rodape article{
+		font-size: 14px;
+		background: #fff;
+		color: #000;
+
+		grid-template-columns: 1fr 1fr 1fr;	
+	}
+	.rodape section{ padding: 10px; }
+	.contato{ border: rgba(0, 0, 0, 0.8) solid; border-width: 0 5px 0 5px; }
+	
+}
+

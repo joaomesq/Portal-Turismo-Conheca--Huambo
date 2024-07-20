@@ -1,0 +1,96 @@
+
+main{ margin: 20px; margin-top: 100px; padding: 10px; }
+h1 a{
+	color: #7e9f19;
+	text-decoration: none;
+}
+
+}
+#nome{ color: #000; }
+.places{
+	width: 100%;
+}
+.place{
+	background: rgba(255, 255, 255, 0.7);
+	border: 1px solid #ccc;
+	border-color: #ccc #999 #999 #ccc;
+	margin-bottom: 80px;
+	padding: 20px;
+    font-size: 1.2em;
+
+	border-radius: 8px;
+}
+
+.place h3{
+	border-bottom: 1px dashed #7e9f19;
+	margin: 0;
+}
+.place img{
+	border: 1px solid #7e9f19;
+	border-radius: 8px;
+	float: left;
+	margin: 10px 10px 0 0;
+	padding: 2px;
+}
+.place span{
+	color: #000;
+}.place span a{
+	text-decoration: underline;
+	color: #00f;
+}
+.place form{
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 0;
+	float: left;
+	padding: 0;
+}
+.place ul{
+	width: inherit;
+	padding: 0;
+	display: grid;
+	grid-template-columns: 0 50% 50%;
+}
+.place ul li button{
+	width: 98%;
+}
+.place ul li button{
+	border: 1px solid;
+}
+
+
+.sidenote{
+	display: none;
+	background: #fffbe4;
+	border: 1px solid #c9bc8f;
+	border-radius: 8px;
+	
+	padding: 10px;
+    left: 69%;
+	margin-top: 0;
+    float: right;
+	
+	width: 30%;
+	position: fixed;
+}
+.sidenote h3{
+	font-size: 14px;
+}
+.sidenote ol{
+	font-size: 12px;
+}
+.sidenote a{
+	text-decoration: underline;
+}
+.sidenote a:hover{
+	color: blue;
+}
+
+/*==== RESPONSIVE ====*/
+@media screen and (min-width: 768px){
+	.places{
+		float: left;
+		width: 68%;
+    }
+	.sidenote{ display: block; }
+}
